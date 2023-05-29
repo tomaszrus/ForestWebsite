@@ -1,0 +1,9 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

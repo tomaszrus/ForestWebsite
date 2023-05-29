@@ -1,0 +1,106 @@
+@use './colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.nav {
+	&__desktop {
+		display: none;
+	}
+	&__mobile {
+		display: flex;
+		flex-direction: column;
+		padding-top: 50px;
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		left: -100vw;
+		list-style: none;
+		background-color: rgb(255, 255, 255);
+		transition: transform 0.3s;
+		z-index: 1;
+		.nav-link {
+			display: block;
+			padding: 10px 30px;
+			font-size: 2.2rem;
+			color: $black;
+			text-decoration: none;
+		}
+	}
+	.burger {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 10px 20px;
+		font-size: 36px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: $black;
+		transition: transform 0.3s;
+		z-index: 10;
+	}
+	.show {
+		transform: translateX(100vw);
+	}
+	.hide {
+		display: none;
+	}
+}
+
+.header {
+	position: relative;
+	height: 450px;
+	width: 100%;
+	background-image: url(../img/jungle-small.jpg);
+	background-size: cover;
+	background-position: center;
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	&__hero {
+		position: relative;
+		height: 100%;
+		color: $white;
+		padding: 10px;
+		z-index: 12;
+		display: flex;
+		justify-content: center;
+		align-items: left;
+		flex-direction: column;
+		&-text {
+			// font-size: 2.8rem;
+		}
+	}
+
+	// background-attachment: fixed;
+}
+
+@import './small';
+@import './medium';
+@import './large';
