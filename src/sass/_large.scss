@@ -2,4 +2,17 @@
 	.header {
 		background-image: url(../img/jungle-large.jpg);
 	}
+
+	.hero-img {
+		background-image: url(../img/girl-large.jpg);
+		&__title {
+			font-size: 3.2rem;
+			// margin: 0 2em;
+		}
+	}
+	.offer {
+		&__card {
+			width: 30%;
+		}
+	}
 }
