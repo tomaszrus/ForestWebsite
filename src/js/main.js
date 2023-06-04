@@ -25,7 +25,7 @@ const handleScrollSpy = () => {
 	const sections = []
 
 	scrollSpySections.forEach(section => {
-		if (window.scrollY <= section.offsetTop + section.offsetHeight - 103) {
+		if (window.scrollY <= section.offsetTop + section.offsetHeight - 80) {
 			sections.push(section)
 
 			const activeSection = document.querySelector(`[href*="${sections[0].id}"]`)

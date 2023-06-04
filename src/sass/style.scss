@@ -10,6 +10,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 }
 
 body {
@@ -285,15 +286,20 @@ body {
 		min-height: 150px;
 	}
 	&__form-btn {
-		align-self: flex-end;
-		padding: 1em;
+		align-self: center;
+		padding: 0.75em;
 		width: 100%;
 		max-width: 300px;
+		font-size: 1.8rem;
 		color: $dark;
 		border: none;
 		border-radius: 8px;
 		background-color: $darkGreen;
 		cursor: pointer;
+		transition: color 0.3s;
+		&:hover {
+			color: white;
+		}
 	}
 	.google-maps {
 		margin-top: 3em;

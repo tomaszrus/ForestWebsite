@@ -58,6 +58,9 @@
 		}
 	}
 	.contact {
+		&__form-btn {
+			align-self: flex-en
+		}
 		.google-maps {
 			padding-bottom: 50%;
 		}
