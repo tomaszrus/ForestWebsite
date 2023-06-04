@@ -153,7 +153,8 @@ body {
 	&__title {
 		position: relative;
 		left: 50%;
-		transform: translateX(-50%);
+		top: 50%;
+		transform: translate(-50%, -30%);
 		font-size: 2.4rem;
 		padding: 1em;
 		// margin: 1em;
@@ -163,9 +164,12 @@ body {
 }
 
 .offer {
+	&__cards {
+		margin-bottom: 3em;
+	}
 	&__card {
 		position: relative;
-		margin: 1em auto 7em;
+		margin: 1em auto 3em;
 		max-width: 400px;
 		height: 450px;
 		color: $dark;
@@ -205,9 +209,16 @@ body {
 				margin: 0 auto;
 				width: 70%;
 				list-style: none;
+				text-align: left;
 				&-item {
 					padding: 0.5em;
 					font-size: 1.4rem;
+					.fa-check {
+						color: $green;
+					}
+					.fa-minus {
+						color: $red;
+					}
 				}
 			}
 			&-btn {
@@ -215,14 +226,88 @@ body {
 				left: 50%;
 				transform: translateX(-50%);
 				bottom: 2em;
-				padding: 1em;
+				padding: 0.5em;
 				border-radius: 8px;
-				width: 80%;
+				font-size: 2rem;
+				width: 60%;
 				border: none;
-				box-shadow: -1px 0px 38px -2px rgba(66, 68, 90, 1);
+				box-shadow: -1px 0px 38px -1px rgba(66, 68, 90, 1);
 				background: none;
 				cursor: pointer;
 			}
+			.preferred {
+				background-color: $darkGreen;
+				box-shadow: -1px 0px 38px -2px rgba(33, 199, 55, 1);
+			}
+		}
+	}
+	&__other {
+		// margin-bottom: 3em;
+		&-text {
+			font-size: 2.4rem;
+			a {
+				text-transform: uppercase;
+				color: $dark;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// KONTAKT
+.contact {
+	position: relative;
+	margin: 3em auto;
+	padding: 1em;
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+	&__form-input,
+	&__form-textarea {
+		margin-bottom: 2em;
+		padding: 0.6em 1.2em;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.6rem;
+		box-shadow: -1px 0px 8px -1px rgba(66, 68, 90, 1);
+	}
+	&__form-textarea {
+		max-width: 100%;
+		min-width: 100%;
+		min-height: 150px;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $dark;
+		border: none;
+		border-radius: 8px;
+		background-color: $darkGreen;
+		cursor: pointer;
+	}
+	.google-maps {
+		margin-top: 3em;
+		position: relative;
+		padding-bottom: 75%;
+		height: 0;
+		overflow: hidden;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
 		}
 	}
 }

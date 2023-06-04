@@ -15,7 +15,7 @@
 </head>
 
 
-<body>
+<body class="contact-page">
     <nav class="nav">
     <button class="burger">
         <i class="fas fa-bars"></i>
@@ -23,13 +23,13 @@
     </button>
     <div class="nav__desktop wrapper">
         <div class="nav__desktop-logo ">
-            <a class="nav-link" href="#home"><i class="fa-solid fa-tree"></i> Forest</a>
+            <a class="nav-link" href="./home"><i class="fa-solid fa-tree"></i> Forest</a>
         </div>
         <div class="nav__desktop-menu ">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#aboutus" class="nav-link ">O nas</a>
-            <a href="#offer" class="nav-link ">Oferta</a>
-            <a href="kontakt.html" class="nav-link ">Kontakt</a>
+            <a href="./#home" class="nav-link active">Home</a>
+            <a href="./#aboutus" class="nav-link ">O nas</a>
+            <a href="./#offer" class="nav-link nav-offer">Oferta</a>
+            <a href="contact.html" class="nav-link nav-contact">Kontakt</a>
         </div>
     </div>
     <div class="nav__mobile">
@@ -38,11 +38,11 @@
         <a href="#home" class="nav-link">Home</a>
         <a href="#aboutus" class="nav-link">O nas</a>
         <a href="#offer" class="nav-link">Oferta</a>
-        <a href="kontakt.html" class="nav-link">Kontakt</a>
+        <a href="contact.html" class="nav-link">Kontakt</a>
         <!-- </div> -->
     </div>
 </nav>
-    <header id="home" class="section1">
+    <header id="home" class="section1 scrollspy-section">
     <div class="header">
         <div class="header__bg"></div>
         <div class="header__hero wrapper">
@@ -52,7 +52,37 @@
     </div>
 </header>
 
+    <main>
+        <section class="contact">
+            <div class="wrapper">
 
+                <form class="contact__form">
+                    <div class="contact__form-top">
+
+                        <label for="name" class="contact__form-label">Imię i nazwisko</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+                    <label for="msg" class="contact__form-label">Wiadomość</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+                <div class="google-maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8462340662327!2d19.892022776880548!3d50.08916571331087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1685607604682!5m2!1spl!2spl"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="wrapper">
+
+            </div>
+        </section>
+    </main>
     <footer class="footer">
     <div class="wrapper">
         <div class="footer__boxes">
@@ -93,8 +123,6 @@
     <hr>
     <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Tropical Paradise</p>
 </footer>
-
-    
     <script src="dist/js/main.min.js"></script>
 </body>
 

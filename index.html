@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body class="main-page">
 
     <nav class="nav">
     <button class="burger">
@@ -25,13 +25,13 @@
     </button>
     <div class="nav__desktop wrapper">
         <div class="nav__desktop-logo ">
-            <a class="nav-link" href="#home"><i class="fa-solid fa-tree"></i> Forest</a>
+            <a class="nav-link" href="./home"><i class="fa-solid fa-tree"></i> Forest</a>
         </div>
         <div class="nav__desktop-menu ">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#aboutus" class="nav-link ">O nas</a>
-            <a href="#offer" class="nav-link ">Oferta</a>
-            <a href="kontakt.html" class="nav-link ">Kontakt</a>
+            <a href="./#home" class="nav-link active">Home</a>
+            <a href="./#aboutus" class="nav-link ">O nas</a>
+            <a href="./#offer" class="nav-link nav-offer">Oferta</a>
+            <a href="contact.html" class="nav-link nav-contact">Kontakt</a>
         </div>
     </div>
     <div class="nav__mobile">
@@ -40,12 +40,12 @@
         <a href="#home" class="nav-link">Home</a>
         <a href="#aboutus" class="nav-link">O nas</a>
         <a href="#offer" class="nav-link">Oferta</a>
-        <a href="kontakt.html" class="nav-link">Kontakt</a>
+        <a href="contact.html" class="nav-link">Kontakt</a>
         <!-- </div> -->
     </div>
 </nav>
 
-    <header id="home" class="section1">
+    <header id="home" class="section1 scrollspy-section">
     <div class="header">
         <div class="header__bg"></div>
         <div class="header__hero wrapper">
@@ -55,7 +55,7 @@
     </div>
 </header>
     <main>
-        <section id="aboutus" class="aboutus">
+        <section id="aboutus" class="aboutus scrollspy-section">
             <div class="wrapper">
                 <h2 class="section-heading">O Nas</h2>
                 <div class="aboutus__box">
@@ -80,7 +80,7 @@
                 <p class="hero-img__title">Przygoda dla całej rodziny</p>
             </div>
         </section>
-        <section id="offer" class="offer">
+        <section id="offer" class="offer scrollspy-section">
             <div class="wrapper">
 
                 <h2 class="section-heading">Oferta</h2>
@@ -126,7 +126,7 @@
                                 <li class="offer__card-info-list-item"><i class="fa-solid fa-minus"></i> opcja poza
                                     pakietem</li>
                             </ul>
-                            <button class="offer__card-info-btn">Wybierz</button>
+                            <button class="offer__card-info-btn preferred">Wybierz</button>
                         </div>
                     </div>
 
@@ -151,7 +151,13 @@
                             <button class="offer__card-info-btn">Wybierz</button>
                         </div>
                     </div>
+                    <div class="offer__other">
+                        <p class="offer__other-text">
+                            Lub sprawdź pozostałą <a href="offers.html">ofertę...</a>
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>
