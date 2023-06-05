@@ -11,9 +11,15 @@ const offerPage = document.querySelector('.nav-offer')
 
 const handleNav = () => {
 	navMobile.classList.toggle('show')
-	// burgerBtn.classList.toggle('show')
 	barsIco.classList.toggle('hide')
 	xIco.classList.toggle('hide')
+	menuItems.forEach(item => {
+		item.addEventListener('click', () => {
+			navMobile.classList.remove('show')
+			barsIco.classList.remove('hide')
+			xIco.classList.add('hide')
+		})
+	})
 }
 
 const handleCurrentYear = () => {
