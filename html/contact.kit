@@ -17,21 +17,31 @@
     <main>
         <section class="contact">
             <div class="wrapper">
-
                 <form class="contact__form">
-                    <div class="contact__form-top">
+                    <div class="contact__form-box">
 
                         <label for="name" class="contact__form-label"><i class="fa-regular fa-id-card"></i> Imię i
-                            nazwisko</label>
-                        <input type="text" class="contact__form-input" id="name">
+                            nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name"
+                            placeholder="Podaj swoje imię i nazwisko">
+                        <p class="contact__form-error-text">error</p>
 
+                    </div>
+                    <div class="contact__form-box">
                         <label for="email" class="contact__form-label"> <i class="fa-solid fa-at"></i> Adres
                             e-mail:</label>
-                        <input type="text" class="contact__form-input" id="email">
+                        <input type="email" class="contact__form-input" id="email" placeholder="Podaj adres email">
+                        <p class="contact__form-error-text">error</p>
                     </div>
-                    <label for="msg" class="contact__form-label"><i class="fa-solid fa-envelope"></i> Wiadomość</label>
-                    <textarea id="msg" class="contact__form-textarea"></textarea>
-                    <button type="submit" class="contact__form-btn btn-special-animation"> <i
+
+                    <div class="contact__form-box">
+                        <label for="msg" class="contact__form-label"><i class="fa-solid fa-envelope"></i>
+                            Wiadomość:</label>
+                        <textarea id="msg" class="contact__form-textarea"
+                            placeholder="Wpisz treść wiadomości"></textarea>
+                        <p class="contact__form-error-text">error</p>
+                    </div>
+                    <button type="submit" class="send contact__form-btn btn-special-animation"> <i
                             class="fa-regular fa-paper-plane"></i> Wyślij</button>
                 </form>
                 <div class="google-maps">
@@ -50,6 +60,7 @@
     </main>
     <!-- @include 'footer.kit' -->
     <!-- @include 'scripts.kit' -->
+    <script src="../dist/js/validator.min.js"></script>
 </body>
 
 </html>
