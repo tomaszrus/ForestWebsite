@@ -1,7 +1,7 @@
 const userName = document.querySelector('#name')
 const email = document.querySelector('#email')
 const message = document.querySelector('#msg')
-const sendBtn = document.querySelector('.send')
+const sendBtn = document.querySelector('#send')
 
 // ERRORS Contact
 
@@ -54,6 +54,11 @@ const checkErrors = () => {
 			errorCount++
 		}
 	})
+	if (errorCount === 0) {
+		document.getElementById('send').onclick = () => {
+			location.href = 'contact.html'
+		}
+	}
 }
 
 sendBtn.addEventListener('click', e => {
